@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+// Required Notice: Copyright 2026 VerothSan (https://github.com/VerothSan/paywall-marker)
 // Content Script für news.google.com: findet Artikel, ermittelt die echte URL,
 // fragt den Service Worker nach dem Paywall-Status und markiert den Artikel.
 (() => {

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+// Required Notice: Copyright 2026 VerothSan (https://github.com/VerothSan/paywall-marker)
 // Reine Analyse-Logik (ohne Chrome-APIs), damit sie auch per Node testbar ist.
 //
 // Ergebnis-Status:

@@ -51,7 +51,7 @@ FEATURES
 PRIVACY
 No tracking, no analytics, no server of our own. Everything is processed and stored locally in your browser. The source code is public.
 Privacy policy: https://verothsan.github.io/paywall-marker/privacy.html
-Source code: https://github.com/VerothSan/paywall-marker
+Source code: https://github.com/VerothSan/paywall-marker (PolyForm Noncommercial 1.0.0 – free for noncommercial use)
 
 Not affiliated with Google. Google News is a trademark of Google LLC.
 ```
@@ -84,7 +84,7 @@ FUNKTIONEN
 DATENSCHUTZ
 Kein Tracking, keine Statistiken, kein eigener Server. Alles wird lokal in deinem Browser verarbeitet und gespeichert. Der Quellcode ist öffentlich.
 Datenschutzerklärung: https://verothsan.github.io/paywall-marker/privacy.html
-Quellcode: https://github.com/VerothSan/paywall-marker
+Quellcode: https://github.com/VerothSan/paywall-marker (PolyForm Noncommercial 1.0.0 – frei für nicht-kommerzielle Nutzung)
 
 Keine Verbindung zu Google. Google News ist eine Marke von Google LLC.
 ```

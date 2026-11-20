@@ -101,6 +101,7 @@ options/             Settings page
 icons/               Extension icons (PNG + SVG sources)
 docs/                Website and privacy policy (GitHub Pages)
 store/               Web Store tooling: build script, image template, listing texts
+LICENSE.md           PolyForm Noncommercial License 1.0.0
 ```
 
 ## Building a release
@@ -117,10 +118,23 @@ The privacy policy is generated from `store/privacy.py`:
 python3 store/privacy.py
 ```
 
+## License
+
+Copyright © 2026 VerothSan. Licensed under the [PolyForm Noncommercial License 1.0.0](../LICENSE.md).
+
+In plain words (the [license text](../LICENSE.md) is what counts):
+
+- ✅ Use it for any **noncommercial** purpose: personal use, hobby projects, study, research, charities, schools, public institutions
+- ✅ **Modify** the source code and build your own version
+- ✅ **Share** copies, modified or not, for noncommercial purposes, as long as you include the license and the `Required Notice` line
+- ❌ Use it for **commercial** purposes (e.g. selling it, bundling it into a paid product, using it in a business)
+
+This makes Paywall-Marker *source-available*, not “open source” in the [OSI sense](https://opensource.org/osd), because open-source licenses allow commercial use. For a commercial license, please [open an issue](https://github.com/VerothSan/paywall-marker/issues).
+
 ## Feedback
 
 Found an article that is marked incorrectly? Please [open an issue](https://github.com/VerothSan/paywall-marker/issues) with the article URL and the tooltip text of its tag.
 
 ---
 
-<sub>Not affiliated with Google. Google News is a trademark of Google LLC.</sub>
+<sub>© 2026 VerothSan · PolyForm Noncommercial 1.0.0 · Not affiliated with Google. Google News is a trademark of Google LLC.</sub>

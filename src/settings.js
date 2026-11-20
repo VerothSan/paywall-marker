@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+// Required Notice: Copyright 2026 VerothSan (https://github.com/VerothSan/paywall-marker)
 // Gemeinsame Standard-Einstellungen für Hintergrund-Skript und Optionsseite.
 export const DEFAULT_SETTINGS = {
   // "auto" = Browsersprache, sonst Sprachcode aus src/i18n.js (de, en, …)

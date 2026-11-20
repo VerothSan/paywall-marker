@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+# Required Notice: Copyright 2026 VerothSan (https://github.com/VerothSan/paywall-marker)
 """Erzeugt docs/privacy.html (Datenschutzerklärung) aus den Texten unten.
 
 Englisch steht zuerst und ist maßgeblich; danach folgen alle weiteren Sprachen der
@@ -509,6 +511,8 @@ def build():
   <meta name="description" content="Privacy policy of the Paywall-Marker browser extension, in 16 languages.">
   <link rel="icon" href="icon-32.png">
   <!-- Generiert von store/privacy.py – Änderungen bitte dort vornehmen. -->
+  <!-- SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+       Required Notice: Copyright 2026 VerothSan (https://github.com/VerothSan/paywall-marker) -->
   <style>
     :root {{ color-scheme: light dark; --fg:#1f2328; --muted:#59636e; --bg:#fff; --line:#d1d9e0; --accent:#4f46e5; --card:#f6f8fa; }}
     @media (prefers-color-scheme: dark) {{ :root {{ --fg:#e6edf3; --muted:#9198a1; --bg:#0d1117; --line:#30363d; --accent:#a5b4fc; --card:#161b22; }} }}

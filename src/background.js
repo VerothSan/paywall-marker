@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+// Required Notice: Copyright 2026 VerothSan (https://github.com/VerothSan/paywall-marker)
 // Service Worker: lädt Artikel-HTML, prüft auf Paywall, cached das Ergebnis.
 import { analyzeHtml, analyzeUrl, looksLikeChallenge, hostOf, matchesDomain } from "./detect.js";
 import { DEFAULT_SETTINGS, CACHE_TTL_MS } from "./settings.js";

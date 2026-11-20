@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+// Required Notice: Copyright 2026 VerothSan (https://github.com/VerothSan/paywall-marker)
 import { DEFAULT_SETTINGS } from "../src/settings.js";
 
 const I18N = globalThis.PWM_I18N; // aus ../src/i18n.js (klassisches Skript davor)

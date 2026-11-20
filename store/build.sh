@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+# Required Notice: Copyright 2026 VerothSan (https://github.com/VerothSan/paywall-marker)
 # Baut alles für den Chrome Web Store:
 #   dist/paywall-marker-<version>.zip   – Upload-Paket (nur Erweiterungsdateien)
 #   dist/store/*.png                    – Screenshots 1280x800 und Werbebild 440x280 (EN/DE)
@@ -42,8 +44,9 @@ for lang in en de; do
   shot "$lang-promo"     440 280 "dist/store/promo-small-440x280-$lang.png"
 done
 
-# 3) Upload-Paket: nur was die Erweiterung zur Laufzeit braucht
+# 3) Upload-Paket: nur was die Erweiterung zur Laufzeit braucht + LICENSE.md
+#    (die Lizenz verlangt, dass jede weitergegebene Kopie den Lizenztext enthält)
 ZIP="dist/paywall-marker-$VERSION.zip"
 rm -f "$ZIP"
-zip -qr -X "$ZIP" manifest.json _locales src options icons/icon-16.png icons/icon-32.png icons/icon-48.png icons/icon-128.png
+zip -qr -X "$ZIP" LICENSE.md manifest.json _locales src options icons/icon-16.png icons/icon-32.png icons/icon-48.png icons/icon-128.png
 echo "Fertig: $ZIP"; ls -la dist/store

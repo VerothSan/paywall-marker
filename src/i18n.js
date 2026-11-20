@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+// Required Notice: Copyright 2026 VerothSan (https://github.com/VerothSan/paywall-marker)
 // Übersetzungen. Klassisches Skript (kein ES-Modul), damit es in Content Script
 // und Optionsseite gleichermaßen per <script>/manifest geladen werden kann.
 // Eigene Lösung statt chrome.i18n, weil chrome.i18n immer die Browsersprache

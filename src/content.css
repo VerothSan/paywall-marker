@@ -1,0 +1,42 @@
+.pwm-badge {
+  display: inline-block;
+  /* In Themen-Clustern liegt der Titel in einem Flex-/Grid-Container, der
+     Kinder auf volle Breite streckt – deshalb Breite explizit begrenzen. */
+  width: fit-content;
+  max-width: max-content;
+  align-self: flex-start;
+  justify-self: start;
+  margin: 0 6px 2px 0;
+  /* Transparenter Rand bei allen Tags, damit "wahrscheinlich frei" mit
+     gestricheltem Rand nicht höher ist als die anderen. */
+  border: 1px solid transparent;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font: 600 11px/16px system-ui, sans-serif;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: help;
+  background: #e8eaed;
+  color: #3c4043;
+}
+.pwm-badge[hidden] { display: none; }
+.pwm-badge[data-status="paywall"] { background: #fce8e6; color: #a50e0e; }
+.pwm-badge[data-status="metered"] { background: #fef7e0; color: #8a5a00; }
+.pwm-badge[data-status="free"]    { background: #e6f4ea; color: #137333; }
+.pwm-badge[data-status="likelyFree"] { background: #f3faf5; color: #137333; border: 1px dashed #81c995; }
+.pwm-badge[data-status="unknown"] { background: #f3e8fd; color: #681da8; }
+.pwm-badge[data-status="pending"] { opacity: 0.6; }
+
+@media (prefers-color-scheme: dark) {
+  .pwm-badge { background: #3c4043; color: #e8eaed; }
+  .pwm-badge[data-status="paywall"] { background: #5c1a16; color: #f6aea9; }
+  .pwm-badge[data-status="metered"] { background: #4d3a00; color: #fdd663; }
+  .pwm-badge[data-status="free"]    { background: #0d3b1e; color: #81c995; }
+  .pwm-badge[data-status="likelyFree"] { background: #0a2414; color: #81c995; border: 1px dashed #2f7d46; }
+  .pwm-badge[data-status="unknown"] { background: #4a2370; color: #e2c6ff; }
+}
+
+/* Paywall-Karten abblenden bzw. ausblenden */
+html.pwm-dim [data-pwm-status="paywall"] { opacity: 0.4; transition: opacity 0.15s; }
+html.pwm-dim [data-pwm-status="paywall"]:hover { opacity: 1; }
+html.pwm-hide [data-pwm-status="paywall"] { display: none !important; }

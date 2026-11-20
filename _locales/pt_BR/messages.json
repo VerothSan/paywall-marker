@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Paywall-Marker para Google Notícias",
+    "description": "Name der Erweiterung (max. 75 Zeichen)"
+  },
+  "extDescription": {
+    "message": "Marca artigos pagos diretamente no seu feed do Google Notícias, antes de você clicar.",
+    "description": "Beschreibung (max. 132 Zeichen)"
+  },
+  "actionTitle": {
+    "message": "Paywall-Marker: Configurações",
+    "description": "Tooltip des Symbolleisten-Icons"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Paywall-Marker pour Google Actualités",
+    "description": "Name der Erweiterung (max. 75 Zeichen)"
+  },
+  "extDescription": {
+    "message": "Signale les articles payants directement dans votre fil Google Actualités, avant que vous ne cliquiez.",
+    "description": "Beschreibung (max. 132 Zeichen)"
+  },
+  "actionTitle": {
+    "message": "Paywall-Marker : Paramètres",
+    "description": "Tooltip des Symbolleisten-Icons"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Paywall-Marker za Google vijesti",
+    "description": "Name der Erweiterung (max. 75 Zeichen)"
+  },
+  "extDescription": {
+    "message": "Označava članke iza naplatnog zida izravno u feedu Google vijesti – prije nego što kliknete.",
+    "description": "Beschreibung (max. 132 Zeichen)"
+  },
+  "actionTitle": {
+    "message": "Paywall-Marker: Postavke",
+    "description": "Tooltip des Symbolleisten-Icons"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Paywall-Marker Google Uutisille",
+    "description": "Name der Erweiterung (max. 75 Zeichen)"
+  },
+  "extDescription": {
+    "message": "Merkitsee maksumuurin takana olevat artikkelit suoraan Google Uutisten syötteessä – ennen kuin klikkaat.",
+    "description": "Beschreibung (max. 132 Zeichen)"
+  },
+  "actionTitle": {
+    "message": "Paywall-Marker: Asetukset",
+    "description": "Tooltip des Symbolleisten-Icons"
+  }
+}

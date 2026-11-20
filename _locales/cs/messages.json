@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Paywall-Marker pro Google Zprávy",
+    "description": "Name der Erweiterung (max. 75 Zeichen)"
+  },
+  "extDescription": {
+    "message": "Označuje placené články přímo ve zdroji Google Zprávy – ještě než na ně kliknete.",
+    "description": "Beschreibung (max. 132 Zeichen)"
+  },
+  "actionTitle": {
+    "message": "Paywall-Marker: Nastavení",
+    "description": "Tooltip des Symbolleisten-Icons"
+  }
+}

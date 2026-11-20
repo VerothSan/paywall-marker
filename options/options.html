@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Paywall-Marker</title>
+  <style>
+    :root { color-scheme: light dark; --fg:#202124; --muted:#5f6368; --bg:#fff; --line:#dadce0; --accent:#1a73e8; }
+    @media (prefers-color-scheme: dark) { :root { --fg:#e8eaed; --muted:#9aa0a6; --bg:#202124; --line:#3c4043; --accent:#8ab4f8; } }
+    body { font: 14px/1.5 system-ui, sans-serif; color: var(--fg); background: var(--bg); max-width: 640px; margin: 32px auto; padding: 0 16px; }
+    h1 { font-size: 20px; margin-bottom: 4px; }
+    p.sub { color: var(--muted); margin-top: 0; }
+    fieldset { border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; margin: 16px 0; }
+    legend { font-weight: 600; padding: 0 4px; }
+    label { display: block; margin: 6px 0; }
+    textarea { width: 100%; box-sizing: border-box; min-height: 110px; font: 13px/1.4 ui-monospace, monospace; background: transparent; color: var(--fg); border: 1px solid var(--line); border-radius: 6px; padding: 6px; }
+    .row { display: flex; gap: 16px; } .row > div { flex: 1; min-width: 0; }
+    @media (max-width: 560px) { .row { flex-direction: column; } }
+    small { color: var(--muted); }
+    button { font: inherit; padding: 6px 14px; border-radius: 6px; border: 1px solid var(--line); background: transparent; color: var(--fg); cursor: pointer; }
+    button.primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+    /* Kurz eingeblendete Bestätigung ("Gespeichert ✓", "Cache geleert ✓").
+       #188038 + Weiß = Kontrast ca. 5:1, in hellem und dunklem Modus gut lesbar. */
+    #status { display: inline-block; margin-left: 8px; padding: 4px 10px; border-radius: 6px; background: #188038; color: #fff; font-weight: 600; animation: pwm-fade-in 0.15s ease-out; }
+    #status:empty { display: none; }
+    @keyframes pwm-fade-in { from { opacity: 0; transform: translateY(2px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { #status { animation: none; } }
+    .lang-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
+    select { font: inherit; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); max-width: 100%; }
+  </style>
+</head>
+<body>
+  <h1>🔒 Paywall-Marker</h1>
+  <p class="sub" data-i18n="o_subtitle"></p>
+
+  <fieldset>
+    <legend data-i18n="o_language"></legend>
+    <div class="lang-row">
+      <select id="language" aria-describedby="langHint"></select>
+      <small id="langHint" data-i18n="o_langHint"></small>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend data-i18n="o_display"></legend>
+    <label><input type="checkbox" id="dimPaywalled"> <span data-i18n="o_dim"></span></label>
+    <label><input type="checkbox" id="hidePaywalled"> <span data-i18n="o_hide"></span></label>
+    <label><input type="checkbox" id="showFreeBadge"> <span data-i18n="o_showFree"></span></label>
+  </fieldset>
+
+  <fieldset>
+    <legend data-i18n="o_fallback"></legend>
+    <div class="row">
+      <div>
+        <label for="alwaysPaywall" data-i18n="o_listPaywall"></label>
+        <textarea id="alwaysPaywall" spellcheck="false"></textarea>
+      </div>
+      <div>
+        <label for="alwaysFree" data-i18n="o_listFree"></label>
+        <textarea id="alwaysFree" spellcheck="false"></textarea>
+      </div>
+    </div>
+    <small data-i18n="o_hint"></small>
+  </fieldset>
+
+  <button class="primary" id="save" data-i18n="o_save"></button>
+  <button id="clear" data-i18n="o_clear"></button>
+  <span id="status" role="status"></span>
+
+  <script src="../src/i18n.js"></script>
+  <script type="module" src="options.js"></script>
+</body>
+</html>

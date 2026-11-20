@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Paywall-Marker för Google Nyheter",
+    "description": "Name der Erweiterung (max. 75 Zeichen)"
+  },
+  "extDescription": {
+    "message": "Markerar artiklar bakom betalvägg direkt i ditt Google Nyheter-flöde – innan du klickar.",
+    "description": "Beschreibung (max. 132 Zeichen)"
+  },
+  "actionTitle": {
+    "message": "Paywall-Marker: Inställningar",
+    "description": "Tooltip des Symbolleisten-Icons"
+  }
+}

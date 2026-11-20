@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Paywall-Marker для Google Новин",
+    "description": "Name der Erweiterung (max. 75 Zeichen)"
+  },
+  "extDescription": {
+    "message": "Позначає платні статті прямо у стрічці Google Новин – ще до того, як ви натиснете.",
+    "description": "Beschreibung (max. 132 Zeichen)"
+  },
+  "actionTitle": {
+    "message": "Paywall-Marker: налаштування",
+    "description": "Tooltip des Symbolleisten-Icons"
+  }
+}

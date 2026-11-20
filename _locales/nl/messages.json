@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Paywall-Marker voor Google Nieuws",
+    "description": "Name der Erweiterung (max. 75 Zeichen)"
+  },
+  "extDescription": {
+    "message": "Markeert artikelen achter een betaalmuur direct in je Google Nieuws-feed – voordat je klikt.",
+    "description": "Beschreibung (max. 132 Zeichen)"
+  },
+  "actionTitle": {
+    "message": "Paywall-Marker: Instellingen",
+    "description": "Tooltip des Symbolleisten-Icons"
+  }
+}

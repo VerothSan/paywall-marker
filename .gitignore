@@ -2,3 +2,5 @@
 /README.md
 # Gebaute Store-Pakete
 dist/
+# Python-Cache
+__pycache__/

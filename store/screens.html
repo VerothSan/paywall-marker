@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8">
 <!-- Vorlage für die Store-Bilder. Aufruf: screens.html#<lang>-<motiv>
-     lang: en | de     motiv: feed | settings | promo
+     lang: en | de     motiv: feed | settings | promo | promo300
      Gerendert mit Firefox headless (siehe build.sh). Zeitungen und Schlagzeilen sind erfunden. -->
 <style>
   * { box-sizing: border-box; margin: 0; }
@@ -52,6 +52,14 @@
   .promo-head h1 { font-size: 30px; letter-spacing: -0.5px; }
   .promo-box p { font-size: 18px; margin: 16px 0 18px; line-height: 1.35; opacity: .95; }
   .promo-box .pwm-badge { margin: 0 6px 6px 0; font-size: 13px; }
+  /* Kleines Werbebild 300x188 (Opera-Add-on-Store): gleiche Gestaltung, kleiner gesetzt */
+  body.promo.mini { width: 300px; height: 188px; }
+  .mini .promo-box { padding: 18px 20px; }
+  .mini .promo-head { gap: 10px; }
+  .mini .promo-head img { width: 42px; height: 42px; }
+  .mini .promo-head h1 { font-size: 21px; letter-spacing: -0.3px; }
+  .mini .promo-box p { font-size: 13px; margin: 10px 0 12px; }
+  .mini .promo-box .pwm-badge { margin: 0 4px 4px 0; padding: 0 6px; font-size: 10.5px; line-height: 16px; }
 </style>
 </head>
 <body>
@@ -97,8 +105,8 @@ const T = {
 }[lang];
 const grad = ["#c7d2fe,#a5b4fc", "#bae6fd,#7dd3fc", "#ddd6fe,#c4b5fd", "#fde68a,#fcd34d", "#bbf7d0,#86efac", "#bfdbfe,#93c5fd", "#e2e8f0,#cbd5e1", "#fbcfe8,#f9a8d4"];
 
-if (shot === "promo") {
-  document.body.className = "promo";
+if (shot === "promo" || shot === "promo300") {
+  document.body.className = shot === "promo300" ? "promo mini" : "promo";
   document.body.insertAdjacentHTML("beforeend", `<div class="promo-box">
     <div class="promo-head"><img src="../icons/icon-128.png" alt=""><h1>Paywall-Marker</h1></div>
     <p>${T.promo}</p>

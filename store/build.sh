@@ -3,7 +3,7 @@
 # Required Notice: Copyright 2026 VerothSan (https://github.com/VerothSan/paywall-marker)
 # Baut alles für den Chrome Web Store:
 #   dist/paywall-marker-<version>.zip   – Upload-Paket (nur Erweiterungsdateien)
-#   dist/store/*.png                    – Screenshots 1280x800 und Werbebild 440x280 (EN/DE)
+#   dist/store/*.png                    – Screenshots 1280x800, Werbebild 440x280 (Chrome) und 300x188 (Opera), EN/DE
 # Voraussetzungen: python3, firefox, ImageMagick (magick), zip
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -42,6 +42,7 @@ for lang in en de; do
   shot "$lang-feed"     1280 800 "dist/store/screenshot-1-feed-$lang.png"
   shot "$lang-settings" 1280 800 "dist/store/screenshot-2-settings-$lang.png"
   shot "$lang-promo"     440 280 "dist/store/promo-small-440x280-$lang.png"
+  shot "$lang-promo300"  300 188 "dist/store/promo-opera-300x188-$lang.png"   # Opera-Add-on-Store
 done
 
 # 3) Upload-Paket: nur was die Erweiterung zur Laufzeit braucht + LICENSE.md

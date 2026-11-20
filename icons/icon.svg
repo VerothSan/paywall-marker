@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <!-- Hintergrund: abgerundetes Quadrat (Chrome empfiehlt ~16 px Rand bei 128 px nicht zwingend; volle Fläche wirkt in der Toolbar klarer) -->
+  <rect x="4" y="4" width="120" height="120" rx="26" fill="url(#bg)"/>
+  <!-- Zeitungsseite -->
+  <rect x="24" y="22" width="62" height="78" rx="7" fill="#fff"/>
+  <rect x="33" y="33" width="44" height="9" rx="3" fill="#4f46e5"/>
+  <rect x="33" y="50" width="44" height="5" rx="2.5" fill="#c7d2fe"/>
+  <rect x="33" y="61" width="44" height="5" rx="2.5" fill="#c7d2fe"/>
+  <rect x="33" y="72" width="30" height="5" rx="2.5" fill="#c7d2fe"/>
+  <!-- Schloss-Plakette -->
+  <circle cx="90" cy="88" r="26" fill="#dc2626" stroke="#fff" stroke-width="5"/>
+  <path d="M81 85v-6a9 9 0 0 1 18 0v6" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <rect x="77" y="84" width="26" height="19" rx="4" fill="#fff"/>
+  <circle cx="90" cy="93.5" r="3.2" fill="#dc2626"/>
+</svg>

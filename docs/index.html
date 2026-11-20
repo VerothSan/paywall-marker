@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paywall-Marker</title>
+  <meta name="description" content="Chrome extension that marks paywalled articles in your Google News feed before you click.">
+  <link rel="icon" href="icon-32.png">
+  <style>
+    :root { color-scheme: light dark; --fg:#1f2328; --muted:#59636e; --bg:#fff; --line:#d1d9e0; --accent:#4f46e5; --card:#f6f8fa; }
+    @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --muted:#9198a1; --bg:#0d1117; --line:#30363d; --accent:#a5b4fc; --card:#161b22; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.6 system-ui, sans-serif; color: var(--fg); background: var(--bg); }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+    header { display: flex; align-items: center; gap: 16px; }
+    header img { width: 64px; height: 64px; }
+    h1 { margin: 0; font-size: 30px; }
+    p.lead { font-size: 18px; color: var(--muted); }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0; }
+    .tag { padding: 2px 10px; border-radius: 999px; font: 600 13px/22px system-ui, sans-serif; border: 1px solid transparent; }
+    .p { background:#fce8e6; color:#a50e0e } .m { background:#fef7e0; color:#8a5a00 } .f { background:#e6f4ea; color:#137333 }
+    .l { background:#f3faf5; color:#137333; border:1px dashed #81c995 } .u { background:#f3e8fd; color:#681da8 }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); }
+    footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <header><img src="icon-128.png" alt=""><h1>Paywall-Marker</h1></header>
+  <p class="lead">Know before you click: marks paywalled articles right in your Google News feed.</p>
+  <div class="tags" aria-label="Tags">
+    <span class="tag p">🔒 Paywall</span><span class="tag m">⏳ Metered</span><span class="tag f">✓ free</span><span class="tag l">✓? free</span><span class="tag u">? unclear</span>
+  </div>
+  <ul>
+    <li>Reads the paywall marking publishers put into their own pages (<code>isAccessibleForFree</code>, <code>article:content_tier</code>). Nothing is bypassed.</li>
+    <li>Optionally dims or hides paywalled articles.</li>
+    <li>Your own fallback lists for sites that block automated checks.</li>
+    <li>16 languages, no tracking, no server, open source.</li>
+  </ul>
+  <p><a href="privacy.html">Privacy policy / Datenschutzerklärung</a> · <a href="https://github.com/VerothSan/paywall-marker">Source code</a> · <a href="https://github.com/VerothSan/paywall-marker/issues">Feedback</a></p>
+  <footer>Not affiliated with Google. Google News is a trademark of Google LLC.</footer>
+</main>
+</body>
+</html>

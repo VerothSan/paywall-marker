@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paywall-Marker – Datenschutz / Privacy</title>
+  <link rel="icon" href="icon-32.png">
+  <style>
+    :root { color-scheme: light dark; --fg:#1f2328; --muted:#59636e; --bg:#fff; --line:#d1d9e0; --accent:#4f46e5; --card:#f6f8fa; }
+    @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --muted:#9198a1; --bg:#0d1117; --line:#30363d; --accent:#a5b4fc; --card:#161b22; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.6 system-ui, sans-serif; color: var(--fg); background: var(--bg); }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+    header { display: flex; align-items: center; gap: 12px; }
+    header img { width: 48px; height: 48px; }
+    h1 { font-size: 26px; margin: 0; }
+    h2 { font-size: 19px; margin-top: 32px; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+    .meta { color: var(--muted); font-size: 14px; }
+    nav.lang { margin: 20px 0; display: flex; gap: 8px; }
+    nav.lang a { padding: 4px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--fg); text-decoration: none; font-size: 14px; }
+    nav.lang a:hover { border-color: var(--accent); }
+    .tldr { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; }
+    table { border-collapse: collapse; width: 100%; font-size: 15px; display: block; overflow-x: auto; }
+    th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--line); }
+    th { white-space: nowrap; }
+    a { color: var(--accent); }
+    section + section { margin-top: 56px; padding-top: 8px; border-top: 3px double var(--line); }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon-128.png" alt="">
+    <h1>Paywall-Marker</h1>
+  </header>
+  <nav class="lang"><a href="#de" hreflang="de">Deutsch</a><a href="#en" hreflang="en">English</a></nav>
+
+  <!-- ===================== DEUTSCH ===================== -->
+  <section id="de" lang="de">
+    <h2 style="border:0;margin-top:0">Datenschutzerklärung</h2>
+    <p class="meta">Stand: 20. November 2026 · gilt für die Browser-Erweiterung „Paywall-Marker“ ab Version 1.2.0</p>
+
+    <div class="tldr"><strong>Kurz gesagt:</strong> Die Erweiterung sammelt keine personenbezogenen Daten, hat keinen eigenen Server und gibt nichts an den Entwickler oder an Dritte weiter. Alles wird lokal in deinem Browser verarbeitet und gespeichert.</div>
+
+    <h2>Was die Erweiterung tut</h2>
+    <p>Paywall-Marker zeigt im Google-News-Feed (<code>news.google.com</code>) neben jedem Artikel an, ob er hinter einer Bezahlschranke liegt. Dazu ruft die Erweiterung die verlinkten Artikelseiten direkt beim jeweiligen Verlag ab und liest die Kennzeichnung, die der Verlag selbst in die Seite schreibt (z. B. <code>isAccessibleForFree</code>).</p>
+
+    <h2>Welche Daten verarbeitet werden</h2>
+    <table>
+      <tr><th>Daten</th><th>Zweck</th><th>Wo / wie lange</th></tr>
+      <tr><td>Adressen (URLs) der Artikel, die im Google-News-Feed sichtbar sind</td><td>Artikelseite abrufen und prüfen</td><td>Nur im Arbeitsspeicher und im lokalen Zwischenspeicher (siehe unten)</td></tr>
+      <tr><td>Inhalt der abgerufenen Artikelseiten</td><td>Paywall-Kennzeichnung auslesen</td><td>Nur kurz im Arbeitsspeicher, wird nicht gespeichert</td></tr>
+      <tr><td>Prüfergebnis je Artikel-URL (Status, Grund, Zeitpunkt)</td><td>Doppelte Abrufe vermeiden</td><td>Lokal im Browser (<code>chrome.storage.local</code>), 2 Stunden bis 7 Tage, „Cache leeren“ löscht alles sofort</td></tr>
+      <tr><td>Deine Einstellungen (Sprache, Darstellung, eigene Domain-Listen)</td><td>Einstellungen merken</td><td>Im Browser (<code>chrome.storage.sync</code>). Ist die Chrome-Synchronisierung aktiv, gleicht Chrome sie über dein Google-Konto zwischen deinen Geräten ab. Das ist eine Funktion von Chrome, nicht der Erweiterung.</td></tr>
+    </table>
+    <p>Die Erweiterung erhebt <strong>keine</strong> Nutzungsstatistiken, verwendet keine Analyse- oder Werbedienste, liest keinen Browserverlauf und lädt keinen Code aus dem Internet nach.</p>
+
+    <h2>Verbindungen zu anderen Diensten</h2>
+    <ul>
+      <li><strong>Verlagsseiten:</strong> Für jeden im Feed sichtbaren Artikel ruft dein Browser die Artikelseite beim Verlag ab, so als würdest du sie kurz öffnen. Dabei werden die für diese Seite vorhandenen Cookies mitgesendet (z. B. eine bereits erteilte Cookie-Zustimmung). Der Verlag erhält dabei die üblichen technischen Daten eines Seitenaufrufs (z. B. IP-Adresse, Browserkennung). Für diese Daten gilt die Datenschutzerklärung des jeweiligen Verlags.</li>
+      <li><strong>Google News:</strong> Lässt sich die Zieladresse eines Artikels nicht direkt aus der Seite lesen, fragt die Erweiterung sie bei <code>news.google.com</code> ab, also bei dem Dienst, den du ohnehin gerade nutzt.</li>
+    </ul>
+    <p>Es gibt keine Verbindung zu Servern des Entwicklers. Der Entwickler erhält keinerlei Daten.</p>
+
+    <h2>Berechtigungen</h2>
+    <ul>
+      <li><strong>Zugriff auf alle Websites</strong>: nötig, weil die Artikel bei beliebigen Verlagen liegen und deren Seiten abgerufen werden müssen. Die Erweiterung verändert nur die Seite <code>news.google.com</code> (Markierungen einfügen), keine anderen Websites.</li>
+      <li><strong>Speicher</strong> (<code>storage</code>): für Einstellungen und den lokalen Zwischenspeicher.</li>
+    </ul>
+
+    <h2>Deine Kontrolle</h2>
+    <ul>
+      <li>„Cache leeren“ in den Einstellungen löscht alle gespeicherten Prüfergebnisse.</li>
+      <li>Beim Entfernen der Erweiterung löscht Chrome alle ihre lokal gespeicherten Daten.</li>
+    </ul>
+
+    <h2>Kontakt und Änderungen</h2>
+    <p>Fragen bitte über <a href="https://github.com/VerothSan/paywall-marker/issues">GitHub Issues</a>. Der Quellcode ist öffentlich einsehbar: <a href="https://github.com/VerothSan/paywall-marker">github.com/VerothSan/paywall-marker</a>. Ändert sich der Umgang mit Daten, wird diese Seite aktualisiert und das Datum oben angepasst.</p>
+  </section>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <section id="en" lang="en">
+    <h2 style="border:0;margin-top:0">Privacy Policy</h2>
+    <p class="meta">Last updated: November 20, 2026 · applies to the browser extension “Paywall-Marker” from version 1.2.0</p>
+
+    <div class="tldr"><strong>In short:</strong> The extension collects no personal data, has no server of its own and shares nothing with the developer or third parties. Everything is processed and stored locally in your browser.</div>
+
+    <h2>What the extension does</h2>
+    <p>Paywall-Marker shows next to each article in the Google News feed (<code>news.google.com</code>) whether it is behind a paywall. To do so, it fetches the linked article pages directly from the publisher and reads the marking the publisher itself puts into the page (e.g. <code>isAccessibleForFree</code>).</p>
+
+    <h2>What data is processed</h2>
+    <table>
+      <tr><th>Data</th><th>Purpose</th><th>Where / how long</th></tr>
+      <tr><td>Addresses (URLs) of the articles visible in the Google News feed</td><td>Fetch and check the article page</td><td>Only in memory and in the local cache (see below)</td></tr>
+      <tr><td>Content of the fetched article pages</td><td>Read the paywall marking</td><td>Briefly in memory only, never stored</td></tr>
+      <tr><td>Check result per article URL (status, reason, time)</td><td>Avoid repeated fetches</td><td>Locally in the browser (<code>chrome.storage.local</code>), 2 hours to 7 days; “Clear cache” deletes everything immediately</td></tr>
+      <tr><td>Your settings (language, display, your own domain lists)</td><td>Remember settings</td><td>In the browser (<code>chrome.storage.sync</code>). If Chrome Sync is enabled, Chrome syncs them across your devices via your Google account. This is a Chrome feature, not part of the extension.</td></tr>
+    </table>
+    <p>The extension does <strong>not</strong> collect usage statistics, use analytics or advertising services, read your browsing history, or load code from the internet.</p>
+
+    <h2>Connections to other services</h2>
+    <ul>
+      <li><strong>Publisher sites:</strong> For each article visible in the feed, your browser fetches the article page from the publisher, as if you briefly opened it. Cookies you already have for that site are sent along (e.g. a cookie consent you gave earlier). The publisher receives the usual technical data of a page request (e.g. IP address, browser identifier). The publisher’s own privacy policy applies to that data.</li>
+      <li><strong>Google News:</strong> If an article’s target address cannot be read directly from the page, the extension asks <code>news.google.com</code> for it, the service you are already using.</li>
+    </ul>
+    <p>There is no connection to any server of the developer. The developer receives no data at all.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Access to all websites</strong>: required because articles are hosted by arbitrary publishers whose pages must be fetched. The extension only modifies <code>news.google.com</code> (inserting the markers), no other website.</li>
+      <li><strong>Storage</strong> (<code>storage</code>): for settings and the local cache.</li>
+    </ul>
+
+    <h2>Your control</h2>
+    <ul>
+      <li>“Clear cache” in the settings deletes all stored check results.</li>
+      <li>When you remove the extension, Chrome deletes all of its locally stored data.</li>
+    </ul>
+
+    <h2>Contact and changes</h2>
+    <p>Questions via <a href="https://github.com/VerothSan/paywall-marker/issues">GitHub Issues</a>. The source code is public: <a href="https://github.com/VerothSan/paywall-marker">github.com/VerothSan/paywall-marker</a>. If the handling of data changes, this page will be updated and the date above adjusted.</p>
+  </section>
+</main>
+</body>
+</html>

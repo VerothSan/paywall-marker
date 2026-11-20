@@ -45,6 +45,9 @@ for lang in en de; do
   shot "$lang-promo300"  300 188 "dist/store/promo-opera-300x188-$lang.png"   # Opera-Add-on-Store
 done
 
+# 2b) Store-Icon 64x64 (Opera-Add-on-Store) aus derselben SVG wie die Erweiterungs-Icons
+magick -background none -density 384 icons/icon.svg -resize 64x64 -depth 8 "PNG32:dist/store/icon-64x64.png"
+
 # 3) Upload-Paket: nur was die Erweiterung zur Laufzeit braucht + LICENSE.md
 #    (die Lizenz verlangt, dass jede weitergegebene Kopie den Lizenztext enthält)
 ZIP="dist/paywall-marker-$VERSION.zip"

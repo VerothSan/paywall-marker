@@ -11,17 +11,17 @@ ZIP hochladen: `dist/paywall-marker-1.2.0.zip`
 
 ## Reiter „Store-Eintrag“
 
-| Feld | Wert |
-|---|---|
-| Name | kommt aus dem Paket: **Paywall-Marker** |
-| Kurzbeschreibung | kommt aus dem Paket (`_locales`, 16 Sprachen) |
-| Kategorie | **Nachrichten & Wetter** (News & Weather) |
-| Sprache (Hauptsprache) | Englisch, zusätzlich Deutsch als lokalisierter Eintrag |
-| Store-Symbol 128×128 | `icons/icon-128.png` |
-| Screenshots (1280×800) | `dist/store/screenshot-1-feed-<en/de>.png`, `dist/store/screenshot-2-settings-<en/de>.png` |
-| Kleines Werbebild (440×280) | `dist/store/promo-small-440x280-<en/de>.png` |
-| Offizielle URL / Website | https://verothsan.github.io/paywall-marker/ |
-| Support-URL | https://github.com/VerothSan/paywall-marker/issues |
+| Feld                        | Wert                                                                                       |
+| --------------------------- | ------------------------------------------------------------------------------------------ |
+| Name                        | kommt aus dem Paket: **Paywall-Marker**                                                    |
+| Kurzbeschreibung            | kommt aus dem Paket (`_locales`, 16 Sprachen)                                              |
+| Kategorie                   | **Nachrichten & Wetter** (News & Weather)                                                  |
+| Sprache (Hauptsprache)      | Englisch, zusätzlich Deutsch als lokalisierter Eintrag                                     |
+| Store-Symbol 128×128        | `icons/icon-128.png`                                                                       |
+| Screenshots (1280×800)      | `dist/store/screenshot-1-feed-<en/de>.png`, `dist/store/screenshot-2-settings-<en/de>.png` |
+| Kleines Werbebild (440×280) | `dist/store/promo-small-440x280-<en/de>.png`                                               |
+| Offizielle URL / Website    | https://verothsan.github.io/paywall-marker/                                                |
+| Support-URL                 | https://github.com/VerothSan/paywall-marker/issues                                         |
 
 ### Ausführliche Beschreibung – English
 
